@@ -1,0 +1,17 @@
+﻿<Window x:Class="Browser.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Browser"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="405.741" Width="525" SizeChanged="Window_SizeChanged">
+    <Grid Margin="0,0,-8,0">
+        <WebBrowser x:Name="webBrowser" Source="http://www.google.ru" HorizontalAlignment="Left" Height="301" VerticalAlignment="Top" Width="497" Margin="10,65,0,0"/>
+        <Button x:Name="importantButton" Content="Избранное" HorizontalAlignment="Left" Margin="36,10,0,0" VerticalAlignment="Top" Width="75" Click="IimportantButton_Click"/>
+        <ComboBox x:Name="importantComboBox" HorizontalAlignment="Left" Margin="145,10,0,0" VerticalAlignment="Top" Width="343" SelectionChanged="ImportantComboBox_SelectionChanged"/>
+        <TextBox x:Name="adressTextBox" HorizontalAlignment="Left" Height="23" Margin="36,37,0,0" TextWrapping="Wrap" Text="http://" VerticalAlignment="Top" Width="381"/>
+        <Button x:Name="goButton" Content="Перейти" HorizontalAlignment="Left" Margin="422,37,0,0" VerticalAlignment="Top" Width="66" Click="GoButton_Click"/>
+
+    </Grid>
+</Window>
